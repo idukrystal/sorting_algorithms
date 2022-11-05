@@ -2,13 +2,14 @@
 
 int main(void)
 {
-	int arr[] = {4, 5, 3, 1, 2};
+	int arr[] = {1, 2, 3, 5,4};
+	int i;
 
-	for (int i = 0; i < 5; i++)
+	for (i = 0; i < 5; i++)
 		printf("%i, ", arr[i]);
 	putchar('\n');
 	bubble_sort(arr, 5);
-	for (int i = 0; i < 5; i++)
+	for (i = 0; i < 5; i++)
                 printf("%i, ", arr[i]);
         putchar('\n');
 }

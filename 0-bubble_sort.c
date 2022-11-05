@@ -17,21 +17,25 @@ void bubble_sort(int *array, size_t size)
 
 	for (i = 0; i < size - 1; i++)
 	{
+		printf("======");
 		swaps = 0;
 		stop = size - i - 1;
 
 		for (j = 0; j < stop; j++)
 		{
+			printf("=> %i\n", array[j]);
 			if (array[j] > array[j + 1])
 			{
 				temp = array[j];
 				array[j] = array[j + 1];
 				array[j + 1] = temp;
 				print_array(array, size);
-				swaps++;
+				if (!(j == stop - 1 && swaps == 0))
+					swaps++;
 			}
 		}
 		if (swaps == 0)
 			break;
 	}
+	printf("***** %lu ******\n", i);
 }
