@@ -1,0 +1,26 @@
+#include "sort.h"
+
+void selection_sort(int *array, size_t size)
+{
+	int i, j, small, tmp;
+
+	for (i = 0; i  < size - 1; i++)
+	{
+		small = i;
+		for (j = i; j < size; j++)
+		{
+			small = array[j] < array[small] ? j : small;
+		}
+		tmp = array[i];
+		array[i] = array[small];
+		array[small] = tmp;
+	}
+}
+
+int main (void)
+{
+	int arr[] = {5, 2, 1, 6, 3, 2};
+	print_array(arr, 6);
+	selection_sort(arr, 6);
+	print_array(arr, 6);
+}
