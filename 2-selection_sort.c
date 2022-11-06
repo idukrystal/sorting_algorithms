@@ -3,26 +3,23 @@
 void selection_sort(int *array, size_t size)
 {
 	size_t i, j;
-	(void) size;
-	(void) array;
-
-	i = 0;
-	j = 0;
-
-	(void) i;
-	(void) j;
-	/**int small, tmp;
+	int small, tmp;
 
 	for (i = 0; i  < size - 1; i++)
 	{
 		small = i;
-		for (j = i; j < size; j++)
+		(void) j;
+		(void) small;
+		(void) tmp;
+		(void) array;
+		
+		/*for (j = i; j < size; j++)
 		{
 			small = (array[j] < array[small]) ? j : small;
 		}
 		tmp = array[i];
 		array[i] = array[small];
 		array[small] = tmp;
-		print_array(array, size);
-		}*/
+		print_array(array, size);*/
+	}
 }
