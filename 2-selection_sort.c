@@ -9,17 +9,14 @@ void selection_sort(int *array, size_t size)
 	{
 		small = i;
 		(void) j;
-		(void) small;
-		(void) tmp;
-		(void) array;
-		
+
 		/*for (j = i; j < size; j++)
 		{
 			small = (array[j] < array[small]) ? j : small;
-		}
+			}*/
 		tmp = array[i];
 		array[i] = array[small];
 		array[small] = tmp;
-		print_array(array, size);*/
+		print_array(array, size);
 	}
 }
