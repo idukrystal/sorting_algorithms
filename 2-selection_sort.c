@@ -1,5 +1,10 @@
 #include "sort.h"
 
+/**
+ * selection_sort - sorts an areay using selction
+ * @array: the arraay
+ * @size: the size of the array
+ */
 void selection_sort(int *array, size_t size)
 {
 	size_t i, j;
@@ -15,7 +20,7 @@ void selection_sort(int *array, size_t size)
 				small = j;
 		}
 		if (small != (int)i)
-	        {
+		{
 			tmp = array[i];
 			array[i] = array[small];
 			array[small] = tmp;
