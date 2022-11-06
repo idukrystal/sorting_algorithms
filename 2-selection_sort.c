@@ -2,10 +2,16 @@
 
 void selection_sort(int *array, size_t size)
 {
+	size_t i, j;
 	(void) size;
 	(void) array;
-	/*size_t i, j;
-	int small, tmp;
+
+	i = 0;
+	j = 0;
+
+	(void) i;
+	(void) j;
+	/**int small, tmp;
 
 	for (i = 0; i  < size - 1; i++)
 	{
