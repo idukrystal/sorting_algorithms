@@ -1,7 +1,9 @@
 #include "sort.h"
 
 void quick_sort(int *array, size_t size)
-{	quick(array, size, 0, size - 1);
+	if (array == NULL)
+		return;
+	quick(array, size, 0, size - 1);
 }
 
 void quick(int *arr, size_t size, size_t a, size_t b)
